@@ -13,6 +13,8 @@ BOT_NAME = 'youtube'
 
 SPIDER_MODULES = ['youtube.spiders']
 NEWSPIDER_MODULE = 'youtube.spiders'
+ITEM_PIPELINES = {'youtube.pipelines.YoutubePipeline': 1}
+VIDEOS_STORE = 'videoFront'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
